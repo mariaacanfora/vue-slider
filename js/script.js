@@ -39,4 +39,27 @@ new Vue({
         currentImg: 0,
 
     },
+
+    methods:{
+        onClickUp(){
+            
+            if (this.currentImg <= 0){
+                this.currentImg = this.items.length - 1
+            }
+
+            this.currentImg--;
+
+        },
+
+        onClickDown(){
+            
+
+            if (this.currentImg >= this.items.length - 1){
+                this.currentImg = 0
+            }
+
+            this.currentImg++;
+
+        }
+    }
 });
