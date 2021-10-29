@@ -33,9 +33,8 @@
 
 .active{
     opacity: 1;
+    
 }
-
-
 
 .text-container{
     position: absolute;
@@ -49,10 +48,13 @@
     width: 100%;
     filter: brightness(0.3);
     transition: brightness .3s;
+    height: calc(100% / 5);
 }
 
 .little-active{
     filter: brightness(1);
+    outline: lightgrey solid 2px;
+    outline-offset: -2px;
 }
 
 .arrow-container{
