@@ -54,3 +54,15 @@
 .little-active{
     filter: brightness(1);
 }
+
+.arrow-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.bg-arrow{
+    background-color: lightgrey;
+}
