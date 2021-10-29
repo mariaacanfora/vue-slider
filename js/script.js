@@ -52,17 +52,21 @@ new Vue({
 
         },
 
-        onClickDown(){
-            
-            
+        onClickDown(){          
 
             if (this.currentImg >= this.items.length - 1){
                 this.currentImg = 0
             } else{
                 this.currentImg++;
             }
+        },
+        
+    },
 
-
-        }
-    }
+    mounted(){
+        let autoplay = setInterval(() => {
+            this.onClickDown()
+        }, 3000);
+    },
+    
 });

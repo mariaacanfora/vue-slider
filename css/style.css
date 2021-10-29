@@ -13,6 +13,7 @@
     left: 0;
     right: 0;
     opacity: 0;
+    transition: opacity .5s;
 }
 
 .img-active{
@@ -47,7 +48,7 @@
 .little-img{
     width: 100%;
     filter: brightness(0.3);
-    transition: brightness .3s;
+    transition: filter .5s;
     height: calc(100% / 5);
 }
 
