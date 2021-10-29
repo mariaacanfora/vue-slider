@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
-.item-conteiner{
+.item-container{
     height: 500px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
 }
 
-.item-conteiner img {
+.img-active{
+    opacity: 1;
+}
+
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -21,8 +30,14 @@
     right: 0;
 }
 
-.item-conteiner .text-container{
+.img-active{
+    opacity: 1;
+}
+
+.text-container{
     position: absolute;
     bottom: 5%;
     right: 5%;
+    z-index: 99;
+    width: 50%;
 }
