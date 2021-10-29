@@ -30,7 +30,7 @@ new Vue({
             },
 
             {
-                image: "img/01.jpg",
+                image: "img/05.jpg",
                 title: "Paradise",
                 text: "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam."
             },
@@ -45,20 +45,23 @@ new Vue({
             
             if (this.currentImg <= 0){
                 this.currentImg = this.items.length - 1
+            } else{
+                this.currentImg--;
             }
 
-            this.currentImg--;
 
         },
 
         onClickDown(){
             
+            
 
             if (this.currentImg >= this.items.length - 1){
                 this.currentImg = 0
+            } else{
+                this.currentImg++;
             }
 
-            this.currentImg++;
 
         }
     }
